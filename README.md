@@ -1,26 +1,11 @@
-# C++ Programming Language | VS Code
+# Laboratory Exercises for Week 9: Introduction to Functions Procedures
+- in compliance to AMA OEd's ITE7101 course requirement
 
-This repository contains a development environment for Visual Studio code to be used by C++ Programming Language of AMA Online Education.
+Task to be implemented on this repository:
 
-**Table of Contents**
+1.	Write a program that can divide six non-zero integers (two integers per division) from the user and display the result to the user. Create a function that will perform the division operation. Display only the non-decimal part of the quotient.
+2.	Write a program that will accept a short value from 10 to 99 and display them per digit (separated by a space).
+3.	Write a program that will display the nth Fibonacci number. Create a function that will generate the nth Fibonacci number. Fibonacci numbers are numbers from the Fibonacci sequence which follows the pattern of 1, 1, 2, 3, 5, 8, 13, 21, 33, 54…
+4.	What can you conclude from this activity?
 
-- [Getting Started](docs/getting-started/README.md)
-  - [Dev Container](docs/getting-started/dev-container/README.md)
-    - [Installing the Pre-requisites](docs/getting-started/dev-container/README.md#installing-the-pre-requisites)
-      - [Windows](docs/getting-started/dev-container/windows.md)
-      - [macOS](docs/getting-started/dev-container/osx.md)
-      - [Linux](docs/getting-started/dev-container/linux.md)
-    - [Configuring the Visual Studio Code](docs/getting-started/dev-container/README.md#configuring-the-visual-studio-code)
-    - [Cloning the Git Repository](docs/getting-started/dev-container/README.md#cloning-the-git-repository)
-    - [Opening in Dev Container](docs/getting-started/dev-container/README.md#opening-in-dev-container)
-  - [Bare Metal](docs/getting-started/bare-metal/README.md)
-    - [Installing the Pre-requisites](docs/getting-started/bare-metal/README.md#installing-the-pre-requisites)
-      - [Windows](docs/getting-started/bare-metal/windows.md)
-      - [macOS](docs/getting-started/bare-metal/osx.md)
-      - [Linux](docs/getting-started/bare-metal/linux.md)
-    - [Configuring the Visual Studio Code](docs/getting-started/bare-metal/README.md#configuring-the-visual-studio-code)
-    - [Cloning the Git Repository](docs/getting-started/bare-metal/README.md#cloning-the-git-repository)
-    - [Opening in Bare Metal](docs/getting-started/bare-metal/README.md#opening-in-bare-metal)
-- [Maintenace](docs/maintenance/README.md)
-  - [Updating the CMake Version](docs/maintenance/README.md#updating-the-cmake-version)
-  - [Updating the Dev Container Image](docs/maintenance/README.md#updating-the-dev-container-image)
+Each task will be implemented on separate brances.

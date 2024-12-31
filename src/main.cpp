@@ -12,28 +12,20 @@
 
 using namespace std;
 
-int nthFibonacci(unsigned int n)
+void printNFibonacciNumbers(short n, unsigned int i, unsigned long long prev0, unsigned long long prev1)
 {
-  if (n < 2)
-    return 1;
-  else
-    return nthFibonacci(n - 1) + nthFibonacci(n - 2);
-}
-
-void printNFibonacciNumbers(unsigned int n)
-{
-  for (int i = 0; i < n; i++)
-  {
-    cout << nthFibonacci(i);
+  if(i < n){
+    cout << prev1;
     if (i != n - 1)
       cout << ", ";
+    return printNFibonacciNumbers(n, i+1, prev1, prev0 + prev1);
   }
 }
 
 int main()
 {
   char todoNext;
-  unsigned int n;
+  short n;
   cout << "\033[1m\033[34m*** Fibonacci Generator ***\033[0m" << endl;
   while (true)
   {
@@ -41,11 +33,13 @@ int main()
     {
       cin.clear();
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
-      cout << "\033[031mInvalid number. Please try again. [hit: integer greater than zero]\033[0m" << endl;
+      cout << "\033[031mInvalid number or exceeds limitation. Please try again." << endl;
+      cout << "[hit: integer greater than zero but less than 94. ";
+      cout << "Due to computing limit, accuracy falters after the 93rd term]\033[0m"<< endl;
     }
     cout << "Enter desired number of terms to generate: ";
     cin >> n;
-    if (!cin.fail() && n > 0)
+    if (!cin.fail() && n > 0 && n < 94)
     {
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
       break;
@@ -57,7 +51,7 @@ int main()
   }
 
   cout << endl << "\033[1m\033[032m";
-  printNFibonacciNumbers(n);
+  printNFibonacciNumbers(n, 0, 0, 1);
   cout << endl << "\033[0m";
 
   cout << endl
